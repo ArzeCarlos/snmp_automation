@@ -37,8 +37,6 @@ git clone https://github.com/ArzeCarlos/snmp_automation
 cd snmp_automation
 ```
 
-````
-
 ### Crear entorno virtual
 
 Linux / Mac:
@@ -204,4 +202,7 @@ Proyecto de automatización SNMP con Python y asyncio -- Carlos Arze.
 ```
 
 ```
-````
+
+```
+
+```
