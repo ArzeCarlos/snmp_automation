@@ -5,14 +5,14 @@ import logging
 from typing import List
 
 from day_schema import Schedule
+from helpers import seconds_until_interval
 from pydantic import ValidationError
 from snmp_schema import SNMPSchema
 from pysnmp.hlapi.v3arch.asyncio import *
 from pysnmp.proto.rfc1902 import (
     Integer, OctetString, ObjectIdentifier, IpAddress,
-    Counter32, Counter64, Gauge32, TimeTicks, Unsigned32
+    Counter32, Counter64, Gauge32, TimeTicks, Unsigned32, Null
 )
-from pysnmp.proto.rfc1905 import Null
 
 # Logs (En archivo snmp.log) y tambien en consola
 logger = logging.getLogger()
@@ -32,8 +32,6 @@ logger.addHandler(file_handler)
 logger.addHandler(console_handler)
 
 
-def seconds_until_interval(minutes: int):
-    return minutes * 60
 
 
 # Este metodo es el encargado de realizar las consultas
@@ -214,7 +212,7 @@ if __name__ == "__main__":
         ## Los oids son los ID con los que se obtiene un parámetro en concreto de los equipos
         ## por ejemplo, nivel de bateria, etc. Estos se encuentran en el MIB.
         snmp_data = SNMPSchema(
-            ip="127.0.0.1",
+            ip="demo.pysnmp.com",
             port=161,
             community="public",
             oids=[

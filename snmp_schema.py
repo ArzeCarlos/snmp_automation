@@ -3,7 +3,7 @@ from pydantic import BaseModel, Field, IPvAnyAddress, field_validator
 
 
 class SNMPSchema(BaseModel):
-    ip: IPvAnyAddress
+    ip: IPvAnyAddress | str
     port: int = Field(default=161, ge=1, le=65535)
     community: str = Field(default="public", min_length=1)
     oids: List[str]

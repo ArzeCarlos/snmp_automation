@@ -6,6 +6,8 @@ El proyecto permite ejecutar consultas `SNMP GET` de manera periódica sobre dis
 
 ---
 
+![Prueba SNMP](/public/test.png)
+
 ## Características
 
 - Consultas SNMP asíncronas
