@@ -198,11 +198,3 @@ MIT License
 ## Autor
 
 Proyecto de automatización SNMP con Python y asyncio -- Carlos Arze.
-
-```
-
-```
-
-```
-
-```
