@@ -1,4 +1,3 @@
-````md
 # SNMP Async Polling Scheduler
 
 Sistema de automatización de consultas SNMP mediante polling asíncrono utilizando Python y `pysnmp`.
@@ -37,6 +36,7 @@ El proyecto permite ejecutar consultas `SNMP GET` de manera periódica sobre dis
 git clone https://github.com/ArzeCarlos/snmp_automation
 cd snmp_automation
 ```
+
 ````
 
 ### Crear entorno virtual
@@ -204,3 +204,4 @@ Proyecto de automatización SNMP con Python y asyncio -- Carlos Arze.
 ```
 
 ```
+````
